@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url>
 <loc>
-http://ddftwiki.github.io/pages-output/about/index.html
+https://ddftwiki.bitbucket.io/pages-output/about/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -10,7 +10,7 @@ http://ddftwiki.github.io/pages-output/about/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/pages-output/another-page/index.html
+https://ddftwiki.bitbucket.io/pages-output/another-page/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -18,7 +18,7 @@ http://ddftwiki.github.io/pages-output/another-page/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/index.html
+https://ddftwiki.bitbucket.io/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -26,7 +26,7 @@ http://ddftwiki.github.io/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/authors-output/ddft.wiki contributors/index.html
+https://ddftwiki.bitbucket.io/authors-output/ddft.wiki contributors/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -34,7 +34,7 @@ http://ddftwiki.github.io/authors-output/ddft.wiki contributors/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/tags-output/not fetch/index.html
+https://ddftwiki.bitbucket.io/tags-output/not fetch/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -42,7 +42,7 @@ http://ddftwiki.github.io/tags-output/not fetch/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/tags-output/very fetch/index.html
+https://ddftwiki.bitbucket.io/tags-output/very fetch/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -50,7 +50,7 @@ http://ddftwiki.github.io/tags-output/very fetch/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/tags-output/cryogen/index.html
+https://ddftwiki.bitbucket.io/tags-output/cryogen/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -58,7 +58,7 @@ http://ddftwiki.github.io/tags-output/cryogen/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/tags/index.html
+https://ddftwiki.bitbucket.io/tags/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -66,7 +66,7 @@ http://ddftwiki.github.io/tags/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/404.html
+https://ddftwiki.bitbucket.io/404.html
 </loc>
 <lastmod>
 2017-04-05
@@ -74,7 +74,7 @@ http://ddftwiki.github.io/404.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/archives/index.html
+https://ddftwiki.bitbucket.io/archives/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -82,7 +82,7 @@ http://ddftwiki.github.io/archives/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/posts-output/2014-03-10-first-post/index.html
+https://ddftwiki.bitbucket.io/posts-output/2014-03-10-first-post/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -90,7 +90,7 @@ http://ddftwiki.github.io/posts-output/2014-03-10-first-post/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/posts-output/2014-11-04-second-post/index.html
+https://ddftwiki.bitbucket.io/posts-output/2014-11-04-second-post/index.html
 </loc>
 <lastmod>
 2017-04-05
@@ -98,7 +98,7 @@ http://ddftwiki.github.io/posts-output/2014-11-04-second-post/index.html
 </url>
 <url>
 <loc>
-http://ddftwiki.github.io/posts-output/2016-01-07-docs/index.html
+https://ddftwiki.bitbucket.io/posts-output/2016-01-07-docs/index.html
 </loc>
 <lastmod>
 2017-04-05
