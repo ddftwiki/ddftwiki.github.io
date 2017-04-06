@@ -3,7 +3,7 @@
 <channel>
 <atom:link href='https://ddftwiki.bitbucket.io/' rel='self' type='application/rss+xml'/>
 <title>
-DDFT
+DDFT.wiki
 </title>
 <link>
 https://ddftwiki.bitbucket.io/
@@ -12,7 +12,7 @@ https://ddftwiki.bitbucket.io/
 The missing manual for Legacy Doomsday
 </description>
 <lastBuildDate>
-Wed, 05 Apr 2017 14:05:14 -0500
+Thu, 06 Apr 2017 08:57:37 -0500
 </lastBuildDate>
 <generator>
 clj-rss
