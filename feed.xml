@@ -12,11 +12,34 @@ https://ddftwiki.bitbucket.io/
 The missing manual for Legacy Doomsday
 </description>
 <lastBuildDate>
-Thu, 06 Apr 2017 09:12:55 -0500
+Mon, 02 Oct 2017 19:08:54 -0400
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+https://ddftwiki.bitbucket.io/posts-output/2017-10-01-test-post/
+</guid>
+<link>
+https://ddftwiki.bitbucket.io/posts-output/2017-10-01-test-post/
+</link>
+<title>
+TEST POST
+</title>
+<description>
+&lt;p&gt; test post for new author ###AND THIS IS SOMETHING ELSE!!!&lt;/p&gt;
+</description>
+<author>
+d8dk32
+</author>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sun, 01 Oct 2017 00:00:00 -0400
+</pubDate>
+</item>
 <item>
 <guid>
 https://ddftwiki.bitbucket.io/posts-output/2016-01-07-docs/
@@ -95,7 +118,7 @@ Quick Start Guide
 
 </enclosure>
 <pubDate>
-Thu, 07 Jan 2016 00:00:00 -0600
+Thu, 07 Jan 2016 00:00:00 -0500
 </pubDate>
 </item>
 <item>
@@ -115,7 +138,7 @@ Yet Another Post
 
 </enclosure>
 <pubDate>
-Tue, 04 Nov 2014 00:00:00 -0600
+Tue, 04 Nov 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
@@ -138,7 +161,7 @@ emidln
 
 </enclosure>
 <pubDate>
-Mon, 10 Mar 2014 00:00:00 -0500
+Mon, 10 Mar 2014 00:00:00 -0400
 </pubDate>
 </item>
 </channel>
