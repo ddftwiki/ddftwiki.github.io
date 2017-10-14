@@ -12,7 +12,7 @@ https://ddftwiki.bitbucket.io/
 The missing manual for Legacy Doomsday
 </description>
 <lastBuildDate>
-Wed, 11 Oct 2017 22:46:12 -0400
+Fri, 13 Oct 2017 23:47:38 -0400
 </lastBuildDate>
 <generator>
 clj-rss
@@ -30,6 +30,9 @@ Example Post
 <description>
 &lt;h3 id=&quot;this&amp;#95;post&amp;#95;not&amp;#95;fetch&amp;#95;enough&quot;&gt;This Post Not Fetch Enough&lt;/h3&gt;&lt;p&gt;some stuff happened&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;and a quote appeared &lt;/p&gt;&lt;/blockquote&gt;
 </description>
+<author>
+emidln
+</author>
 <enclosure>
 
 </enclosure>
