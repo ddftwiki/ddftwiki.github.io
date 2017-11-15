@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 <channel>
-<atom:link href='https://ddftwiki.bitbucket.io/' rel='self' type='application/rss+xml'/>
+<atom:link href='https://ddft.wiki/' rel='self' type='application/rss+xml'/>
 <title>
 DDFT.wiki
 </title>
 <link>
-https://ddftwiki.bitbucket.io/
+https://ddft.wiki/
 </link>
 <description>
 The missing manual for Legacy Doomsday
 </description>
 <lastBuildDate>
-Wed, 15 Nov 2017 00:49:02 +0000
+Wed, 15 Nov 2017 14:26:17 +0000
 </lastBuildDate>
 <generator>
 clj-rss
