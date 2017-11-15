@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="Description" CONTENT="Doomsday Fetchland Tendrils Manual, Tutorial, and Articles for the Legacy Magic the Gathering Format">
+    <title>DDFT.wiki: The Basics</title>
+    <link rel="canonical" href="https://ddftwiki.bitbucket.io/pages-output/basics/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">DDFT.wiki</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <!--<li><a href="/archives/">Archives</a></li>!-->
+                
+                <li
+                >
+                <a href="/pages-output/about/">About</a>
+                </li>
+                
+                <li
+                >
+                <a href="/pages-output/articles/">Articles</a>
+                </li>
+                
+                <li
+                >
+                <a href="/pages-output/authors/">Authors</a>
+                </li>
+                
+                <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div id="content">
+                
+<div id="custom-page">
+    <div id="page-header">
+        <h2>The Basics</h2>
+		
+		<h5>by bennotsi, Doishy</h5>
+		
+    </div>
+    
+    <p>This section explains the basic Doomsday piles that attempt to end the game directly with a lethal Tendrils of Agony. Fortunately, these piles will also be the piles that you will execute most frequently and likely win most of your games with.</p><p>There will however, be times where you will build piles that win with Laboratory Maniac, or build up a higher storm count with a Time Spiral or double-Doomsday pile, or build a pile that plays around Pyroblast on one of your draw spells, or even optimize for the highest probability of being successful against a Surgical Extraction in your opponent's hand.</p><p>Before this becomes too intimidating, let's first consider the most simple Doomsday piles. And since this is the starting point for reading about Doomsday piles in general, we will first explain a bit about the notation that we use when writing down piles.</p><h2 id="notation">Notation</h2><table><thead><tr><th>Shorthand</th><th>Cardname</th></tr></thead><tbody><tr><td>AoI</td><td>Act on Impulse</td></tr><tr><td>BS</td><td>Brainstorm</td></tr><tr><td>BW</td><td>Burning Wish</td></tr><tr><td>CB</td><td>Conjurer's Bauble</td></tr><tr><td>DD</td><td>Doomsday</td></tr><tr><td>DR</td><td>Dark Ritual</td></tr><tr><td>GP</td><td>Gitaxian Probe</td></tr><tr><td>IC</td><td>Infernal Contract</td></tr><tr><td>IU</td><td>Ideas Unbound</td></tr><tr><td>LED</td><td>Lion's Eye Diamond</td></tr><tr><td>LM</td><td>Laboratory Maniac</td></tr><tr><td>LP</td><td>Lotus Petal</td></tr><tr><td>P</td><td>Ponder</td></tr><tr><td>TW</td><td>Three Wishes</td></tr><tr><td>ToA</td><td>Tendrils of Agony</td></tr></tbody></table><p>Mana costs are represented as follows:<br /> W White - U Blue - B Black - R Red - G Green<br /> 1 one generic mana<br /> BBB means three black mana<br /> 1UU means two blue mana and one generic mana<br /> X means a variable amount of any generic mana<h2></h2></p><p>Consider the following example of a Doomsday pile in this notation:</p><pre><code>GP in hand.
+-&gt; IU, LED, GP, LED, BW&#40;ToA&#41;                BBB+UU &#40;5&#41;   8 Storm
+</code></pre><p>This means that IU is the top card and BW is the bottom card. BBB+UU represents the mana cost, (5) is the total converted mana cost required to complete the pile. 8 Storm represents the amount of storm that executing this pile will generate, this includes the Doomsday you've cast to create this pile as well as the Gitaxian Probe and the Tendrils of Agony (including the non-copy original spell) at the end of the pile. The original Tendrils is included for simplicity, because we simply count to ten if we want to cause 20 lifeloss. I will frequently leave out the wish target for BW at the end of the pile, because it is obvious that it is used for Tendrils of Agony.</p><h2 id="basic&#95;doomsday&#95;piles">Basic Doomsday Piles</h2><p>The Doomsday piles that we will explain here are all based on using either Ideas Unbound or Three Wishes as the big draw spell. We will first consider the single cantrip piles, followed by the double cantrip piles.</p><p>There are some key rules you can use to help remember things like storm count. If the intended pile is meant to win without passing the turn then you always have 1 storm to begin with from Doomsday itself. Additionally if you plan on casting all cards used in the Doomsday pile then you get to add 5 storm from that. Breaking down the cards sets of pre-pile, pile and wish targets helps the mind easily compute what storm count you will end up with a certain line of play.</p><h3 id="single&#95;cantrip&#95;piles">Single cantrip piles</h3><p>There are basically two variants to this pile. You either have a spell that draws a single card in hand ready to cast, or a Conjurer's Bauble in play. For the moment, the difference does not really matter and we'll just assume that you have a castable GP in hand, either with 2 life or by taking into account the extra U cost.</p><p><em>Ideas Unbound</em></p><pre><code>GP in hand.
+-&gt; IU, LED, GP, LED, BW&#40;ToA&#41;                BBB+UU &#40;5&#41;   8 Storm
+</code></pre><ol><li>Cast Doomsday build: [IU, LED, LED, GP, BW]</li><li>Cast GP, draw (IU)</li><li>Cast IU, draw (LED, LED, GP)</li><li>Cast LED</li><li>Cast LED</li><li>Cast GP, hold priority crack LEDs for BBB+RRR, draw (BW)</li><li>Cast BW targeting ToA</li><li>Cast ToA</li></ol><p>This pile has cost you BBB+UU and 4 life and results in 8 storm, that is 16 lifeloss. Note that UU is often paid for by a Lion's Eye Diamond. With a Dark Ritual (to cast Doomsday) and a Lion's Eye Diamond preceding the Doomsday you already generate enough storm to cause 20 lifeloss. If you are low on life you'll need more mana to cast GP with actual mana instead of life.</p><p>As for the remarks about priority in step 6, It's best to announce that you would like to hold priority when casting the next spell, before you actually announce which spell that is. This way there can be no discussion about that you waited too long between announcing the spell and stating that you want to hold priority after casting it. This may be a bit overly cautious, but there's no harm and in this way you can avoid discussions during tournament play.</p><p><em>Act on Impulse</em></p><pre><code>GP in hand.
+-&gt; AoI, LED, GP, LED, BW&#40;ToA&#41;               BBB+2R &#40;6&#41;    8 Storm
+</code></pre><ol><li>Cast Doomsday build: [AoI, LED, LED, GP, BW]</li><li>Cast GP, draw (AoI)</li><li>Cast AoI, exile (LED, LED, GP)</li><li>Cast LED</li><li>Cast LED</li><li>Cast GP, hold priority crack LEDs for BBB+RRR, draw (BW)</li><li>Cast BW targeting ToA</li><li>Cast ToA</li></ol><p>This pile costs BBB+2R and 4 life and results in 8 storm, which is 16 lifeloss. Like with Ideas Unbound, the mana cost for the draw spell (2R) can be - and often is - paid for by a Lion's Eye Diamond in response to the first GP. The most important difference is that Act on Impulse not actually draws but exiles the cards. This means that Lion's Eye Diamond's activation cost will not affect your ability to cast the cards 'drawn' with Act on Impulse. If you are low on life can also build [AoI, LED, LED, BW, X] and directly 'draw' Burning Wish with Three Wishes, this will produce once less storm however it does let you 'hide' a card in your Doomsday stack from your opponent.</p><h3 id="double&#95;cantrip&#95;piles">Double cantrip piles</h3><p><em>Ideas Unbound</em></p><pre><code>GP, GP in hand.
+-&gt; LED, IU, LP, LED, BW&#40;ToA&#41;                BBB+1 &#40;4&#41;   9 Storm
+</code></pre><ol><li>Cast Doomsday build: [LED, IU, LP, LED, BW]</li><li>Cast GP, draw (LED)</li><li>Cast LED</li><li>Cast GP, hold priority crack LED for UUU, draw (IU)</li><li>Cast IU, draw (LP, LED, BW)</li><li>Cast LP</li><li>Cast LED<ul><li>Crack LP for R</li></ul></li><li>Cast BW targeting ToA, hold priority crack LED for BBB</li><li>Cast ToA for 9 storm.</li></ol><p>This pile has cost only BBB+1 and 4 life to execute and results in 9 storm, which is 18 lifeloss. This pile is quite efficient when it comes to mana. We use the additional cantrip to draw a Lion's Eye Diamond before executing the rest of the pile and use that Lion's Eye Diamond to pay for much of the rest of the pile. We basically turn our additional Gitaxian Probe into a Lion's Eye Diamond with Doomsday.</p><p>One difficulty with this pile is that Ideas Unbound actually draws Burning Wish before we can sacrifice the second Lion's Eye Diamond in the pile to produce red mana. Therefore, one of the Lion's Eye Diamonds in the pile is replaced with a Lotus Petal, which together with one blue mana left from the first Lion's Eye Diamond pays for the Burning Wish. The second Lion's Eye Diamond is sacrificed for three black mana and pays for all but 1 mana of Tendrils of Agony.</p><p><em>Act on Impulse</em></p><pre><code>GP, GP in hand.
+-&gt; LED, AoI, LED, LED, BW&#40;ToA&#41;               BBB &#40;3&#41;   9 Storm
+</code></pre><ol><li>Cast Doomsday build: [LED, AoI, LED, LED, BW]</li><li>Cast GP, draw (LED)</li><li>Cast LED</li><li>Cast GP, hold priority crack LED for RRR, draw (AoI)</li><li>Cast AoI, exile (LED, LED, BW)</li><li>Cast LED</li><li>Cast LED<ul><li>Crack LEDs for BBB RRR</li></ul></li><li>Cast BW targeting ToA</li><li>Cast ToA for 9 storm.</li></ol><p>This pile is very efficient at BBB and 4 life for 9 storm. The key idea is that, strictly speaking we only needed AoI, LED, LED, BW in our single cantrip pile. Meaning that if we shift this 4 card pile to the bottom, we can put any card on top. In this case we put a Lion's Eye Diamond on top, which we draw with Gitaxian Probe. The Lion's Eye Diamond then pays for the Act on Impulse, which exiles the other two LEDs and the Burning Wish we need to produce mana and wish for and cast Tendrils.</p><h2 id="variations">Variations</h2><p>That's it for the basic and most common piles that end with Tendrils of Agony. There are many variations of each pile and it doesn't really make sense to list them all. In each of the above piles you may replace Gitaxian Probe with a Ponder, or simply use blue mana to pay for it rather than 2 life. Also, since Act on Impulse and Three Wishes function very similarly, all piles involving Act on Impulse can be executed with Three Wishes all the same, except for a different mana cost. The use of Conjurer's Bauble to draw into the piles allows for lower mana or life costs but does result in less storm being generated during the play line.</p><p>The most important part of learning how to cast Doomsday, is to think how you would like to cast a lethal Tendrils of Agony, and then think of the cards you'll need to get there. Doomsday is essentially a 5 card tutor.</p><p>The trick is to try not to think of the specifics too much. Try to break everything down into resources. The key ones are the cards you hold in hand, the mana available, any other cards in play like Conjurer's Bauble and your deck construction. As you get more familiar with these factors you can then start to consider your opponent as a factor and become more experienced in generating piles on the fly to fit whatever gameplay scenario you might come across.</p><p>As for the other piles out there, there are countless piles that use Brainstorm to draw some cards and put some other cards back. This particular trick allows you to exchange cards in hand with cards that you've tutored up with Doomsday. As you can imagine this results in a large number of combinations of Brainstorm + some other cards in hand that enable different Doomsday piles for different mana costs and storm counts.</p><h2 id="summary">Summary</h2><ol><li>You generally need a card to draw or exile you three cards into your stack.</li><li>Lethal storm via Tendrils of Agony is the most common win condition for the   deck.</li><li>Holding priority when cantripping with LED in play is key, make sure to get   into this habit.</li></ol><h2 id="get&#95;started">Get Started</h2><p>You now have sufficient information to start practicing! Just take a proven decklist and start goldfishing trying to figure out what piles to build and how to execute them. There are several documents available that list Doomsday piles which you can use to get to know more piles. These are very important tools when learning to how play the deck.<br /> See the [DDFT Pile Document] for a more basic list of different piles.<br /> For some examples of 'proven decklists' can be found <a href='http://tcdecks.net/archetype.php?archetype=Doomsday&format=Legacy'>HERE</a>.<br /></p>
+    <div id="prev-next">
+        
+		
+		<a href="/">&laquo; The Doomsday Codex</a>
+		
+        
+        
+        ||
+        
+        
+        <a href="/pages-output/brainstorm/">Brainstorm in Doomsday &raquo;</a>
+        
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="sidebar">
+                <h3>Links</h3>
+                <ul id="links">
+                    
+                    <li><a href="https://teamstormboards.proboards.com/">Storm Boards</a></li>
+                    
+                    <li><a href="https://reddit.com/r/mtglegacy/">/r/MTGLegacy</a></li>
+                    
+                    <li><a href="http://mtgthesource.com">The Source</a></li>
+                    
+                    <li><a href="https://www.youtube.com/channel/UC5uCLmqksd7KrHdKa6Gxmaw">g0ld_rook&#39;s Youtube channel</a></li>
+                    
+                    <li><a href="https://www.youtube.com/user/hulahula5000">Erik Bjerknes&#39; Youtube channel</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <!--
+                <div id="recent">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        
+                        <li><a href="/posts-output/2014-03-10-first-post/">Example Post</a></li>
+                        
+                    </ul>
+                </div> 
+                
+                
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                        
+                        <li><a href="/tags-output/not fetch/">not fetch</a></li>
+                        
+                    </ul>
+                </div>
+                 !-->
+            </div>
+        </div>
+    </div>
+    <footer>Copyright &copy; 2017 ddft.wiki contributors
+        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
