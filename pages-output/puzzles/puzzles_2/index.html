@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<!-- For the puzzles page, need to have a wider layout than base provides. Yes this is kind of gross -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="Description" CONTENT="Doomsday Fetchland Tendrils Manual, Tutorial, and Articles for the Legacy Magic the Gathering Format">
+    <title>DDFT.wiki: Puzzle 2</title>
+    <link rel="canonical" href="https://ddft.wiki/pages-output/puzzles/puzzles_2/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">DDFT.wiki</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <!--<li><a href="/archives/">Archives</a></li>!-->
+                
+                <li
+                >
+                <a href="/pages-output/about/">About</a>
+                </li>
+                
+                <li
+                >
+                <a href="/pages-output/authors/">Authors</a>
+                </li>
+                
+                <li
+                >
+                <a href="/pages-output/articles/">Articles</a>
+                </li>
+                
+                <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container">
+    <div class="row">
+		<div style="width: 980px; margin: 0 auto;">
+            <div id="content">
+                
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- I have no idea how to properly include css files beyond screen.css so I'm hacking this in to get a wider table here  -->
+<style>
+table {
+	color: #333; /* Lighten up font color */
+	font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+	width: 900px;
+	border-collapse:
+	collapse; border-spacing: 0;
+}
+</style>
+
+
+<div>
+	<div id="page-header">
+		<h2>Puzzle 2</h2>
+	</div>
+
+	<div id="puzzle-intro">
+		<p>Playing against burn, in a post-sideboard game where you expect that they have brought in hate. It&#39;s our second turn, and we&#39;ve shuffled off a ponder and drawn Duress. Your opponent lost to a Laboratory Maniac Game 1 and as a result they&#39;ve decided to play a Grim Lavamancer instead of continuing to apply pressure, giving you a window of opportunity. The Grim Lavamancer has summoning sickness. Note that your deck includes Ideas Unbound, and that your single copy of Act on Impulse is in hand.</p>
+	</div>
+
+<!--  HEY! need to either use "../../img/.jpg" in dev or https://ddft.wiki/img/.jpg" in prod -->
+
+	<!-- pre-loading all our images. This must remain or the canvas drawing breaks. -->
+	<div id="imagesDiv" style="display:none">
+	<!-- always load this image, no matter what, used by our drawing engine -->
+	<img id="unknown" width="97" height="135" src="../../img/unknown.jpg" alt="unknown">
+	<img id="unknown_lowerright" width="97" height="135" src="../../img/unknown_lowerright.jpg" alt="unknown">
+	<img id="unknown_upperleft" width="97" height="135" src="../../img/unknown_upperleft.jpg" alt="unknown">
+		<!-- continue on to the dynamically necessary ones -->
+		
+			
+				<img id="lions_eye_diamond" width="97" height="135" 
+				src="../../img/lions_eye_diamond.jpg" alt="lions_eye_diamond">
+			
+				<img id="doomsday" width="97" height="135" 
+				src="../../img/doomsday.jpg" alt="doomsday">
+			
+				<img id="act_on_impulse" width="97" height="135" 
+				src="../../img/act_on_impulse.jpg" alt="act_on_impulse">
+			
+				<img id="dark_ritual" width="97" height="135" 
+				src="../../img/dark_ritual.jpg" alt="dark_ritual">
+			
+				<img id="dark_ritual" width="97" height="135" 
+				src="../../img/dark_ritual.jpg" alt="dark_ritual">
+			
+				<img id="conjurers_bauble" width="97" height="135" 
+				src="../../img/conjurers_bauble.jpg" alt="conjurers_bauble">
+			
+				<img id="duress" width="97" height="135" 
+				src="../../img/duress.jpg" alt="duress">
+			
+		
+		
+			
+				<img id="red_elemental_blast" width="97" height="135" 
+				src="../../img/red_elemental_blast.jpg" alt="red_elemental_blast">
+			
+				<img id="lightning_bolt" width="97" height="135" 
+				src="../../img/lightning_bolt.jpg" alt="lightning_bolt">
+			
+				<img id="fireblast" width="97" height="135" 
+				src="../../img/fireblast.jpg" alt="fireblast">
+			
+				<img id="unknown" width="97" height="135" 
+				src="../../img/unknown.jpg" alt="unknown">
+			
+		
+		
+		
+		
+			
+				<img id="mountain" width="97" height="135" 
+				src="../../img/mountain.jpg" alt="mountain">
+			
+		
+		
+			
+				<img id="grim_lavamancer" width="97" height="135" 
+				src="../../img/grim_lavamancer.jpg" alt="grim_lavamancer">
+			
+		
+		
+		
+		
+		
+			
+				<img id="mountain" width="97" height="135" 
+				src="../../img/mountain.jpg" alt="mountain">
+			
+		
+		
+		
+			
+				<img id="monastery_swiftspear" width="97" height="135" 
+				src="../../img/monastery_swiftspear.jpg" alt="monastery_swiftspear">
+			
+		
+		
+		
+		
+			
+				<img id="underground_sea" width="97" height="135" 
+				src="../../img/underground_sea.jpg" alt="underground_sea">
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	
+
+	<canvas id="myCanvas" width="900" height="600"
+	style="border:1px solid #000000;">
+	Your browser does not support the HTML5 canvas tag... RIP
+	</canvas>
+
+
+	<script>
+		window.onload = function() {
+
+		// maintenance on the page
+		$("#solution").hide();
+
+		// Moving on to setting up the puzzle canvas
+
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		var card_width = 97;
+		var card_height = 135;
+
+		var screen_y = 600;
+		var screen_x = 900;
+
+		// used to place objects so that they're not directly aligned with the canvas edge
+		var edge_buffer = 10;
+		// How much spacing between cards in hand.
+		var hand_separation_width = card_width / 1.5; 
+		// Amount of px to move the hand towards 'offscreen'
+		var hand_y_offset = 30;
+
+		// hand card rotation stuff
+		var hand_angle_increment_degrees = 3; // 5
+		var hand_y_adjustment_scaling = 1.4; // 1.3 used in a ** calculation
+
+		// Library drawing stuff
+		var library_x_offset = edge_buffer;
+		var library_y_offset = 200; // from bottom or top edge of screen
+		var library_label_font = "italic lighter 14px courier";
+		var library_label_offset = 15;
+		var library_angle_increment = 17;
+		var library_separation_width = 35;
+
+		// for drawing a 3d looking pile
+		var library_cards_offset = 5;
+
+		// Zones drawing stuff
+		// start a bit to the right of the library. 
+		var zones_x_offset = library_x_offset + (card_width * 1.4);
+
+		// How far to move the drawing of each card
+		var zones_y_advance = 20;
+		var zones_x_advance = 20;
+		// This is a huge hack, the way I rotate is screwed up and therefore we get a fudge factor here to work around it
+		var card_orientation_2_offset = (card_width * 1.25);
+	
+
+		// Graveyard & Exile Stuff
+		graveyard_y_advance = 30;
+
+	// Draw our Library //
+	// First, draw the face down cards. We may or may not draw this one. Do the math.
+	revealedCards = 0;
+	
+	libraryCount = 53; // defaulting to enough that a library is active. Prob what people mean.
+	
+		libraryCount = 50;
+	
+
+
+	cur_x = library_x_offset;
+	cur_y = screen_y - library_y_offset;
+	cur_angle = library_angle_increment;
+
+	if(libraryCount > revealedCards) {
+		// Draw the face down card
+		var img = document.getElementById("unknown_lowerright");
+		var img_final = document.getElementById("unknown");
+		if(libraryCount - revealedCards >= 3) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2 + library_cards_offset * 2, cur_y + card_height/2 + library_cards_offset * 2);
+			ctx.translate(-cur_x - card_width/2 - library_cards_offset * 2, -cur_y - card_height/2 - library_cards_offset * 2);
+			ctx.drawImage(img_final, cur_x + library_cards_offset * 2, cur_y + library_cards_offset * 2, card_width, card_height);
+			ctx.restore();
+			}
+		if(libraryCount - revealedCards >= 2) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2 + library_cards_offset, cur_y + card_height/2 + library_cards_offset);
+			ctx.translate(-cur_x - card_width/2 - library_cards_offset, -cur_y - card_height/2 - library_cards_offset);
+			if(libraryCount - revealedCards == 2) { 
+				ctx.drawImage(img_final, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+				} else {
+				ctx.drawImage(img, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+				}
+			ctx.restore();
+			}
+		if(libraryCount - revealedCards >= 1) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			if(libraryCount - revealedCards == 1) { 
+				ctx.drawImage(img_final, cur_x, cur_y, card_width, card_height);
+				} else {
+				ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+				}
+			ctx.restore();
+			}
+
+		//ctx.drawImage(img, library_x_offset, screen_y - library_y_offset, card_width, card_height);
+	}
+	if(revealedCards > 0) {
+		
+	}
+
+	ctx.font = library_label_font;
+	ctx.textAlign = "center";
+	ctx.fillText("Library", library_x_offset + (card_width / 2), screen_y - library_y_offset - library_label_offset); 
+
+
+	// Draw opp library //
+	// First, draw the face down cards. We may or may not draw this one. Do the math.
+	revealedCards = 0;
+	
+	libraryCount = 53; // defaulting to enough that a library is active. Prob what people mean.
+	
+		libraryCount = 50;
+	
+
+
+	cur_x = library_x_offset;
+	cur_y = library_y_offset - card_height;
+	cur_angle = 180 - library_angle_increment;
+	 
+
+	// Draw an appropriate number of cards. Either 0 if no library, 1, 2, or 3 if there are 3+ cards. 
+	if(libraryCount > revealedCards) {
+		// Draw the face down card
+		var img = document.getElementById("unknown_upperleft"); 
+		var img_final = document.getElementById("unknown");
+			if(libraryCount - revealedCards >= 3) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2 + library_cards_offset * 2, cur_y + card_height/2 + library_cards_offset * 2);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2 - library_cards_offset * 2, -cur_y - card_height/2 - library_cards_offset * 2);
+				ctx.drawImage(img_final, cur_x + library_cards_offset * 2, cur_y + library_cards_offset * 2, card_width, card_height);
+				ctx.restore();
+				}
+			if(libraryCount - revealedCards >= 2) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2 + library_cards_offset, cur_y + card_height/2 + library_cards_offset);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2 - library_cards_offset, -cur_y - card_height/2 - library_cards_offset);
+				if(libraryCount - revealedCards == 2) { 
+					ctx.drawImage(img_final, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+					} else {
+					ctx.drawImage(img, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+					}
+				ctx.restore();
+				}
+			if(libraryCount - revealedCards >= 1) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+				if(libraryCount - revealedCards == 1) { 
+					ctx.drawImage(img_final, cur_x, cur_y, card_width, card_height);
+					} else {
+					ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+					}
+				ctx.restore();
+				}
+	}
+	if(revealedCards > 0) {
+		
+	}
+
+	ctx.font = library_label_font;
+	ctx.textAlign = "center";
+	ctx.fillText("Library", library_x_offset + (card_width / 2), library_y_offset + library_label_offset * 1.5); 
+
+	// Draw our Graveyard //
+
+	cur_x = screen_x - (card_width / 2);
+	cur_y = (screen_y / 2) + edge_buffer;
+
+	
+
+	// Draw our Exile //
+	
+
+	// Draw opp Graveyard //
+
+	cur_x = screen_x - (card_width / 2);
+	cur_y = (screen_y / 2) - edge_buffer - card_height;
+
+	
+
+	// Draw opp Exile //
+	
+
+
+	// Draw Our Zones //
+	zones_y_offset = (screen_y / 2) + edge_buffer;
+	cur_x = zones_x_offset;
+	cur_y = zones_y_offset;
+	card_orientations = 0; // track state on how far the x should advance
+		
+
+	// draw untapped zone 1 //
+	
+		
+			var img = document.getElementById("underground_sea");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			card_orientations = 1;
+		
+	
+	
+
+	// Zone 2 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+
+	// Zone 3 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+
+	// Zone 4 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+
+	// Zone 5 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+
+	// Draw Opp Zones //
+	zones_y_offset = (screen_y / 2) - edge_buffer - card_height;
+	cur_x = zones_x_offset;
+	cur_y = zones_y_offset; 
+	card_orientations = 0; // track state on how far the x should advance
+
+	// draw untapped zone 1 //
+	
+		
+			var img = document.getElementById("mountain");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		
+	
+	
+		
+			var img = document.getElementById("mountain");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		
+	
+
+	// Zone 2 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+		
+			var img = document.getElementById("grim_lavamancer");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		
+	
+	
+
+	// Zone 3 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+		
+			var img = document.getElementById("monastery_swiftspear");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		
+	
+
+	// Zone 4 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+
+	// Zone 5 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	
+	
+
+
+
+	// Draw our hand //
+
+	
+		num_cards = 7; // cache it
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		cur_x = ((screen_x / 2) - (card_width / 2)) - ((hand_separation_width / 2) * (num_cards - 1));
+		hand_y = screen_y - edge_buffer - card_height + hand_y_offset;
+
+		startingOffset = 0; // degrees
+		adjusted_num_cards = num_cards;
+		// calculate the angles to make the hand look more natural
+		if(num_cards % 2 == 0) {
+			startingOffset -= hand_angle_increment_degrees / 2; // symmetric layout of cards in hand, none in center
+			adjusted_num_cards -= 2;
+		} else {
+			adjusted_num_cards -= 1;
+		}
+		startingOffset -= hand_angle_increment_degrees * (adjusted_num_cards / 2);
+		cur_offset = startingOffset;
+			
+		
+			var img = document.getElementById("lions_eye_diamond");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+			var img = document.getElementById("doomsday");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+			var img = document.getElementById("act_on_impulse");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+			var img = document.getElementById("dark_ritual");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+			var img = document.getElementById("dark_ritual");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+			var img = document.getElementById("conjurers_bauble");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+			var img = document.getElementById("duress");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		
+	
+
+	// Draw opponent hand // 
+
+	
+		num_cards = 4; // cache it
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		cur_x = ((screen_x / 2) - (card_width / 2)) - ((hand_separation_width / 2) * (num_cards - 1));
+		hand_y = 0 + edge_buffer - hand_y_offset; // screen_y - edge_buffer - card_height;
+
+		startingOffset = 180; // degrees
+		adjusted_num_cards = num_cards;
+		// calculate the angles to make the hand look more natural
+		if(num_cards % 2 == 0) {
+			startingOffset += hand_angle_increment_degrees / 2; // symmetric layout of cards in hand, none in center
+			adjusted_num_cards -= 2;
+		} else {
+			adjusted_num_cards -= 1;
+		}
+		startingOffset += hand_angle_increment_degrees * (adjusted_num_cards / 2);
+		cur_offset = startingOffset;
+		
+			var img = document.getElementById("red_elemental_blast");
+
+			hand_y_adjustment = Math.abs(cur_offset - 180) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 - hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 + hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y - hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset -= hand_angle_increment_degrees;
+
+		
+			var img = document.getElementById("lightning_bolt");
+
+			hand_y_adjustment = Math.abs(cur_offset - 180) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 - hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 + hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y - hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset -= hand_angle_increment_degrees;
+
+		
+			var img = document.getElementById("fireblast");
+
+			hand_y_adjustment = Math.abs(cur_offset - 180) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 - hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 + hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y - hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset -= hand_angle_increment_degrees;
+
+		
+			var img = document.getElementById("unknown");
+
+			hand_y_adjustment = Math.abs(cur_offset - 180) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 - hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 + hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y - hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset -= hand_angle_increment_degrees;
+
+		
+	
+	
+	// Draw the life totals. This will eventually extend to also draw storm and mana counts?
+	ctx.font = library_label_font;
+	ctx.textAlign = "left";
+	
+		ctx.fillText("20 Life", edge_buffer, (screen_y / 2) - edge_buffer);
+	
+
+	
+		ctx.fillText("19 Life", edge_buffer, (screen_y / 2) + (edge_buffer * 2));
+	
+
+	// draw center line of page
+	ctx.beginPath();
+	ctx.moveTo(20, screen_y / 2);
+	ctx.lineTo(screen_x - 20, screen_y / 2);
+	ctx.lineWidth = 2;
+	ctx.strokeStyle = 'black';
+	ctx.stroke();
+	};
+	</script>
+
+<br>
+
+<div class="widget">
+  <button id="show-solution-button">Show Solution</button>
+</div>
+
+	<div id="solution"> 
+		<h3>Solution</h3>
+		<p>The solution requires you to play the Duress to get rid of the Red Elemental Blast, and to also have mana available to pay for a Gitaxian Probe with mana instead of life to avoid dying to the Bolt and Fireblast.  If we had AoI available we could have created a pile of AoI, LED, LED, BW, (Anything) which would hit for 20 damage, which in this case would have been enough, but this example illustrates a couple strengths of including IU in your list.</p><table><thead><tr><th>Action</th><th>State Notes</th></tr></thead><tbody><tr><td>Cast Dark Ritual</td><td>BBB, Storm = 1</td></tr><tr><td>Cast Duress</td><td>BB, Storm = 2, Take Red Elemental Blast</td></tr><tr><td>Cast Dark Ritual</td><td>BBBB, Storm = 3</td></tr><tr><td>Cast Conjurer's Bauble</td><td>BBB, Storm = 4</td></tr><tr><td>Cast LED</td><td>Storm = 5</td></tr><tr><td>Cast Doomsday</td><td>Storm = 6, Life = 9, Pile: IU, LED, LED, GP, BW</td></tr><tr><td>Crack LED for UUU</td><td>UUU</td></tr><tr><td>Activate CB</td><td>Draw IU</td></tr><tr><td>Cast IU</td><td>U, Storm = 7, Draw: LED, LED, GP</td></tr><tr><td>Cast both LEDs</td><td>Storm = 9</td></tr><tr><td>Cast GP, paying U, Crack LEDs for RRRBBB</td><td>RRRBBBB, Storm = 10, Draw BW</td></tr><tr><td>Cast BW</td><td>Storm = 11, RBBBB, Get ToA</td></tr><tr><td>Cast ToA</td><td>22 Damage, Lethal</td></tr></tbody></table>
+	</div>
+
+<script>
+$( "#show-solution-button").click(function() {
+	if($('#show-solution-button').text() == "Show Solution") {
+		$("#solution").show();
+		$('#show-solution-button').text("Hide Solution");
+	} else {
+		$("#solution").hide();
+		$('#show-solution-button').text("Show Solution");
+	}
+});
+</script>
+
+
+</div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>Copyright &copy; 2018 ddft.wiki contributors
+        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
